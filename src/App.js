@@ -20,6 +20,30 @@ function App() {
                   </div>
                 )}
               </Draggable>
+              <Draggable draggableId='item1' index={1}>
+                {(provided) => (
+                  <div
+                    className='item'
+                    ref={provided.innerRef}
+                    {...provided.draggableProps}
+                    {...provided.dragHandleProps}
+                  >
+                    item1
+                  </div>
+                )}
+              </Draggable>
+              <Draggable draggableId='item2' index={2}>
+                {(provided) => (
+                  <div
+                    className='item'
+                    ref={provided.innerRef}
+                    {...provided.draggableProps}
+                    {...provided.dragHandleProps}
+                  >
+                    item2
+                  </div>
+                )}
+              </Draggable>
             </div>
           )}
         </Droppable>
